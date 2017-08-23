@@ -1,0 +1,114 @@
+body{
+    font: 14px "SegoeUIRegular"; 
+    color: #404040; 
+    line-height: 20px;
+    margin:5% 40%;
+}
+.autocomplite-select{
+    color: #404040; 
+    line-height: 20px;
+    padding: 0 3px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.autocomplite{
+    position: relative;
+    width:200px;
+    
+}
+.autocomplite-block{
+    position:absolute;
+    left:0px;
+    top:27px;
+    border:solid #afaeae 1px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+.autocomplite-block span{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #868686;
+}
+.autocomplite-block ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top:5px;
+    margin-bottom: 2px;
+}
+.autocomplite-block li{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.autocomplite-block li:hover{
+    background-color: #eee;
+}
+.notfound input{
+    outline-color:#f5a636;
+}
+.autocomplite-info{
+    display:none;
+}
+.notfound .autocomplite-info{
+    display:block;
+    color:#f5a636;
+    font-size: 12px;
+    line-height: 14px;
+}
+.notfound-error input{
+    border:solid 2px #f72f2f;
+}
+.autocomplite-error{
+    display: none;
+}
+.notfound-error .autocomplite-error{
+    display:block;
+    color:#f72f2f;
+    font-size: 12px;
+    line-height: 14px;
+}
+.autocomplite-selected{
+    background-color: #eee;
+}
+.autocomplite-select:hover ~ .autocomplite-alt{
+    display:block;
+}
+ .autocomplite-select:hover:focus ~ .autocomplite-alt{
+    display:none;
+}
+.autocomplite-alt{
+    display:none;
+    position: absolute;
+    top:32px;
+    left:20px;
+    background-color: #343434;
+    color:#fff;
+    padding:0 5px;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+}
+.autocomplite-alt:after{
+    content:'';
+    position: absolute;
+    top:-7px;
+    left:70px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 8px 10px;
+    border-color: transparent transparent #343434 transparent;
+}
+.next{
+    margin-top: 150px;
+}
+
+::-webkit-input-placeholder {color:#868686;}
+::-moz-placeholder          {color:#868686;}
+:-moz-placeholder           {color:#868686;}
+:-ms-input-placeholder      {color:#868686;}
+
+:focus::-webkit-input-placeholder {color: #afaeae}
+:focus::-moz-placeholder          {color: #afaeae}
+:focus:-moz-placeholder           {color: #afaeae}
+:focus:-ms-input-placeholder      {color: #afaeae}
