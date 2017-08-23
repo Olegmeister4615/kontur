@@ -1,6 +1,6 @@
 angular.module("app").factory('mainFactory', function($http,$rootScope){
 var items;
-$http.get("/prod/data/kladr.json")//получение данных
+$http.get("/data/kladr.json")//получение данных
 .success(function(data){
 
     items=data;
